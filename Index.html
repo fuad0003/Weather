@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Day Weather Forecast for Dhaka</title>
+   
+   <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://source.unsplash.com/1920x1080/?weather'); /* Background image from Unsplash */
+        background-size: cover;
+        background-position: center;
+        color: #fff; /* White text color */
+    }
+    
+    .weather-container {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(52, 152, 219, 0.7); /* Semi-transparent blue background */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 20px auto;
+    }
+    
+    .weather-card {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 15px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .weather-card h3 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        color: #e74c3c; /* Red text color */
+    }
+    
+    .weather-card p {
+        margin: 0;
+        color: #fff; /* White text color */
+    }
+
+    .weather-icon {
+        width: 50px; /* Adjust the size of the weather icon */
+        height: 50px;
+    }
+    
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    /* Media Queries for Responsiveness */
+    
+    @media (max-width: 600px) {
+        .weather-container {
+            padding: 10px;
+        }
+    
+        .weather-card {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 400px) {
+        .weather-card h3 {
+            font-size: 1.2rem;
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="weather-container">
+        <h1>5-Day Weather Forecast for Dhaka</h1>
+        <div class="flex-container" id="weather-list"></div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
